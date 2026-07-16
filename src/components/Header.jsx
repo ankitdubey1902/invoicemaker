@@ -13,9 +13,9 @@ export default function Header({ darkMode, setDarkMode }) {
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="text-lg font-bold tracking-tight text-slate-900 dark:text-white">
+              <h1 className="text-lg font-bold tracking-tight text-slate-900 dark:text-white">
                 Invoice<span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent dark:from-violet-400 dark:to-indigo-400">Maker</span>
-              </span>
+              </h1>
               <span className="inline-flex items-center rounded-md bg-indigo-50 px-1.5 py-0.5 text-xs font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-700/10 dark:bg-indigo-950/40 dark:text-indigo-400 dark:ring-indigo-400/20">
                 Pro
               </span>
