@@ -73,7 +73,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
     width: 210mm !important;
-    height: 100% !important;
+    height: auto !important; /* Replaced height: 100% to allow natural page height flow and prevent blank pages */
   }
 
   #root {
@@ -114,8 +114,8 @@ body {
   #invoice-capture-area {
     /* Set exact content width: A4 (210mm) - 40mm margins = 170mm */
     width: 170mm !important;
-    /* Exactly 20mm margins on all print sides, centered */
-    margin: 20mm auto !important; 
+    /* Exactly 20mm top margin and 0 bottom margin to prevent pushing an empty page at the end */
+    margin: 20mm auto 0 auto !important; 
     min-height: 0 !important;
     height: auto !important;
     padding: 0 !important;
